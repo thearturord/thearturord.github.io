@@ -1,0 +1,299 @@
+* {
+ padding: 0;
+ margin: 0;
+ font-family: arial,sans-serif;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  background: #A4A4A4;
+  height: 100%;
+}
+
+.contenedordetodo {
+ margin: 5px auto;
+ max-width: 97%;
+}
+
+.header {
+ text-align: left;
+ background: #2d3436;
+ color: white;
+ padding: 5px 15px;
+ margin-bottom: 10px;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ box-sizing: border-box;
+
+}
+
+.logo {
+  display: inline-block;
+
+}
+
+.logo img {
+  width: 120px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.header h1 {
+display: inline-block;
+position: relative;
+bottom: 15px;
+font-size: 22px;
+}
+
+.social-media{
+  display: flex;
+  align-items: flex-end;
+}
+
+.social-media-wrapper{
+  display: flex;
+  align-items: center;
+  margin-right: 5px ;
+  padding: 5px;
+}
+
+.social-link{
+  margin-right: 10px;
+}
+
+.media-ico{
+  display: block;
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+}
+
+.snapchat-ico{
+  position: relative;
+  background: white;
+  overflow-y: hidden;
+  display: inline-block;
+  height: 35px;
+  border-radius: 20%;
+}
+
+.snapchat-ico::before{
+  content: "\f2ad";
+  font-size: 40px;
+  color: rgb(255, 233, 01);
+  font-family:"FontAwesome";
+  font-weight: 100;
+  overflow: hidden;
+  position: relative;
+  bottom: 2px;
+}
+
+.menu {
+  background: #366AFF;
+  padding: 5px 15px;
+  margin: 10px 0 ;
+  border-radius: 5px;
+}
+
+.menu li {
+  list-style: none;
+
+}
+
+.menu a{
+  color: white;
+  font: bold 14px sans-serif;
+  padding: 10px 25px;
+
+}
+
+.menu a:hover {
+  background-color: #4357FF;
+}
+
+.nav-boton a::before{
+  font-family:"FontAwesome";
+  font-size: 20px;
+  font-weight: 100;
+  padding-right: 5px;
+}
+
+.nav-boton li:nth-child(1) a::before{
+ content:"\f015";
+}
+
+.nav-boton li:nth-child(2) a::before{
+ content:"\f0e0";
+ font-weight: lighter;
+ font-size: 15px;
+}
+
+.buscar input::before {
+  content: "\f002";
+  font-family:"FontAwesome";
+  font-size: 17px;
+  font-weight: 100;
+  padding-right: 5px;
+}
+
+.buscar input{
+  padding: 4px;
+  border-radius: 5px;
+}
+
+
+.buscar button{
+  padding: 4px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+  background-color: white;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  position: relative;
+  right: 10%;
+}
+
+.fas{
+
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+}
+
+.pie {
+
+  padding: 18px 15px;
+  color: white;
+  background: #2d3436;
+}
+
+
+
+/*pantalla completa*/
+@media only screen and (min-width:549px){
+ .menu {
+    padding: 15px;
+  }
+  .expand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu li {
+   display: inline-block;
+
+  }
+
+  .menu li:hover {
+    background-color: #4357FF;
+  }
+
+
+
+  .buscar label {
+    color: white;
+  }
+
+  .cell-menu-icon{
+    display: none;
+  }
+  .check-box{
+    display: none;
+  }
+}
+
+/*Cell screen mode*/
+@media only screen and (max-width:548px){
+.columna{display: none;}
+
+.header {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ padding: 10px 15px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 120px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.header h1 {
+font-size: 22px;
+padding: 10px ;
+}
+
+.buscar{
+  padding: 5px 0;
+}
+
+.buscar label{
+  color: white;
+}
+
+.menu{
+  padding: 5px 0;
+}
+
+.menu a{
+  display: block;
+}
+
+.menu li{
+  padding: 5px 0;
+}
+
+.expand{
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.check-box{
+  width: 100%;
+}
+
+.check-box:checked ~ .expand{
+  max-height: 200px;
+}
+
+.check-box{
+  display: none;
+}
+
+.cell-menu-icon{
+  color: white;
+  font-size: 18px;
+  display: block;
+}
+
+
+
+}

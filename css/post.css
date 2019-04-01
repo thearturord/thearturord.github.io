@@ -1,0 +1,56 @@
+.seccion {
+ margin: 5px 5px;
+}
+
+.section-wrapper {
+  display: flex;
+ }
+
+.articulos{
+
+}
+
+.main h2 {
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 10px ;
+}
+
+
+.time {
+ margin-bottom: 10px ;
+}
+
+.Noticia p, .Noticia h4, .Noticia ol, .Noticia li{
+  margin: 15px 40px;
+}
+
+.Noticia p, .Noticia li{
+font-size: 18px;
+}
+
+.Noticia h4{
+font-size: 20px;
+}
+
+.main {
+ margin: 10px 10px 15px 0;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background: #fff;
+ border-radius: 5px;
+}
+
+.videoaddon{
+margin: 8px;
+position: relative;
+left: 15px;
+}
+
+.imgaddon{
+margin: 8px;
+max-width: 50%;
+}

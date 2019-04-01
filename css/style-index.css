@@ -1,0 +1,163 @@
+.logo-test{
+  width: 50%;
+}
+
+.subtitulo{
+  margin-bottom: 15px;
+  background: #2d3436;
+  color: white;
+  width: 75%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto 15px;
+
+}
+
+.section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.articulos{
+  flex-basis: 70%;
+}
+
+.time {
+  margin-bottom: 10px ;
+}
+
+.main {
+  margin-bottom: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.main p, .main time{
+  font-size: 18px;
+  font-weight:bold;
+}
+
+.main h2{
+  font-size: 24px;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px ;
+}
+
+.video-player{
+
+}
+
+.videoaddon{
+ margin: 8px;
+}
+
+.videoaddon-ex{
+  max-width: 720px;
+  max-height: 720px;
+}
+
+.videoaddon-ex-wrapper{
+
+}
+
+.video-controls{
+  position: relative;
+  bottom: 49px;
+  left: 580px;
+  width: 50px;
+}
+
+.boton{
+ padding: 5px 7px;
+ border: solid 1px #2344FF ;
+ border-radius: 5px;
+ background-color: #363534;
+ color: white;
+ font-size: 16px;
+}
+
+.imgaddon{
+ margin: 8px;
+ max-width: 50%;
+
+}
+
+.leer-wrapper{
+  width: 100%;
+}
+
+.leer{
+  text-align: right;
+  margin: 5px 0;
+  padding: 0 5px;
+}
+
+.leer a {
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.columna {
+ flex-basis: 30%;
+ margin-right: 10px;
+
+}
+
+.titulodecolumna-wrapper{
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.titulodecolumna{
+font-family: "Merriweather";
+font-size: 20px;
+}
+
+.fueguito{
+  padding-right: 2px;
+  width: 25px;
+}
+
+.lista{
+  border-radius: 5px;
+  background:#fff;
+}
+
+.lista li  {
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-macht-parent;
+  padding: 10px;
+}
+
+.lista a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: arial;
+  color: black;
+}
+/*Cell screen mode*/
+@media only screen and (max-width:548px){
+
+  .articulos{
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-media{
+    margin: 0;
+  }
+  .subtitulo{
+    width: 100%;
+  }
+
+}
