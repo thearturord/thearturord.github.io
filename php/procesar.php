@@ -1,6 +1,6 @@
 <?php
 
-$nombre = $_GET['nombre'];
+$nombre = $_POST['nombre'];
 // $apellidos = $_GET["apellidos"];
 // $email = $_GET["email"];
 // $pais = $_GET["pais"];
