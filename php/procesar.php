@@ -15,6 +15,5 @@ $carta .= "De: $pais \n";
 $carta .= "Mensaje: $mensaje";
 
 mail($destinatario, $asunto, $carta);
-header('location:index.html');
 
 ?>
