@@ -1,10 +1,10 @@
 <?php
 
-$nombre = $_GET['nombre'];
-$apellidos = $_GET["apellidos"];
-$email = $_GET["email"];
-$pais = $_GET["pais"];
-$mensaje = $_GET["mensaje"];
+$nombre = $_POST['nombre'];
+$apellidos = $_POST["apellidos"];
+$email = $_POST["email"];
+$pais = $_POST["pais"];
+$mensaje = $_POST["mensaje"];
 
 $destinatario = "thisisrdmusic@gmail.com";
 $asunto = "Respuesta de Lula";
